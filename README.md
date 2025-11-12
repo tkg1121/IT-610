@@ -207,18 +207,36 @@ sudo ufw reload
 
 ## Screenshots
 
-Include these in your `screenshots/` directory:
+### 1. Panel Login
+![Panel Login](screenshots/01-panel-login.png)
 
-1. `01-panel-login.png` — Dashboard view
-2. `02-create-location-node.png` — Create Location
-3. `03-node-config.png` — Node creation (Token)
-4. `04-wings-config.png` — `config.yml`
-5. `05-wings-journal.png` — `journalctl -u wings` output
-6. `06-allocations.png` — Port 25565 allocation
-7. `07-create-server.png` — Server creation form
-8. `08-server-console.png` — Console view
-9. `09-minecraft-client-connect.png` — Minecraft connection test
-10. `10-docker-ps.png` — Docker containers running
+### 2. Create Location & Node
+![Create Location](screenshots/02-create-location-node.png)
+
+### 3. Node Configuration
+![Node Configuration](screenshots/03-node-config.png)
+
+### 4. Wings Configuration
+![Wings Configuration](screenshots/04-wings-config.png)
+
+### 5. Wings Journal Log
+![Wings Journal](screenshots/05-wings-journal.png)
+
+### 6. Allocation Settings
+![Allocations](screenshots/06-allocations.png)
+
+### 7. Server Creation
+![Create Server](screenshots/07-create-server.png)
+
+### 8. Server Console
+![Server Console](screenshots/08-server-console.png)
+
+### 9. Minecraft Client Connection
+![Minecraft Connection](screenshots/09-minecraft-client-connect.png)
+
+### 10. Docker Containers Running
+![Docker ps output](screenshots/10-docker-ps.png)
+
 
 ---
 

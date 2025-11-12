@@ -1,0 +1,26 @@
+# Pterodactyl Wings Configuration Example
+# Place this in /etc/pterodactyl/config.yml
+
+api:
+  host: 0.0.0.0
+  port: 8080
+  ssl:
+    enabled: false
+
+  token_id: "your_token_id_here"
+  token: "your_token_here"
+
+system:
+  data: /var/lib/pterodactyl/volumes
+  sftp:
+    bind_port: 2022
+    disabled: false
+
+docker:
+  network:
+    name: pterodactyl_nw
+  socket: /var/run/docker.sock
+  container_user: root
+
+remote: "https://panel.example.com"
+

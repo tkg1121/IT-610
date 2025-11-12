@@ -1,0 +1,16 @@
+[Unit]
+Description=Pterodactyl Wings Daemon
+After=docker.service network-online.target
+Requires=docker.service
+
+[Service]
+User=root
+WorkingDirectory=/etc/pterodactyl
+ExecStart=/usr/local/bin/wings
+Restart=on-failure
+StartLimitInterval=180
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+

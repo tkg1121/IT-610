@@ -1,0 +1,14 @@
+# Pterodactyl Wings (Daemon) Setup Commands
+
+sudo mkdir -p /etc/pterodactyl /var/lib/pterodactyl/volumes
+sudo curl -Lo /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_amd64
+sudo chmod +x /usr/local/bin/wings
+
+sudo systemctl daemon-reload
+sudo systemctl enable --now wings
+sudo systemctl status wings --no-pager
+
+# Configure wings.yml with Token ID and Token from the Panel
+sudo nano /etc/pterodactyl/config.yml
+sudo systemctl restart wings
+
